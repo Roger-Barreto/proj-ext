@@ -21,7 +21,7 @@
 
 .Text {
   width: 50%;
-} 
+}
 
 .Subtitle {
   line-height: 1.5;
@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 700px) {
+  .Section {
+    margin-bottom: 0;
+  }
+  
   .Section > div {
     display: flex;
     flex-direction: column;
@@ -92,16 +96,17 @@
     gap: 0;
   }
 
-  .Buttons{
+  .Buttons {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .Buttons > .Button, .Buttons > .ButtonWatchVideo{
+  .Buttons > .Button,
+  .Buttons > .ButtonWatchVideo {
     width: 100%;
   }
 
-  .Title{
+  .Title {
     font-size: 40px;
   }
 
@@ -112,7 +117,7 @@
     height: 200px;
   }
 
-  .Text{
+  .Text {
     width: 100%;
   }
 }

@@ -1,9 +1,17 @@
-import React from "react";
+'use client';
+import React, { use } from "react";
 import styles from "./Introduction.module.css";
 import { BsPlayCircle } from "react-icons/bs";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Introduction() {
+  function navigateTo() {
+    window.open(
+      "https://www.cnbb.org.br/a-pastoral-da-ecologia-integral/",
+      "_blank"
+    );
+  }
   return (
     <section className={styles.Section}>
       <div className="Container">
@@ -26,7 +34,9 @@ export default function Introduction() {
           </p>
 
           <div className={styles.Buttons}>
-            <button className={styles.Button}>Saiba mais</button>
+            <button onClick={() => navigateTo()} className={styles.Button}>
+              Saiba +
+            </button>
             <button className={styles.ButtonWatchVideo}>
               <BsPlayCircle />
               Assistir Video

@@ -1,0 +1,54 @@
+.Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.Image {
+  width: 50%;
+  position: relative;
+  height: 80vh;
+}
+
+.Title{
+    font-size: 50px;
+    color: #008d3b;
+}
+
+.TextContent {
+  width: 50%;
+}
+
+.Item{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.Item:hover{
+    filter: brightness(1.2);
+}
+
+@media (max-width: 700px) {
+  .Content {
+    flex-direction: column;
+  }
+
+  .TextContent {
+    width: 100%;
+  }
+
+  .Image {
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+    height: 200px;
+  }
+
+  .Title {
+    font-size: 40px;
+  }
+}

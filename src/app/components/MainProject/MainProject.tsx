@@ -1,12 +1,20 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./MainProject.module.css";
 import { BsPlayCircle } from "react-icons/bs";
 
 export default function MainProject() {
+  const navigateTo = (path: string) => {
+    window.open(path, "_blank");
+  };
+
   return (
-    <section className={styles.Section}>
-      <div className="Container" style={{'position': 'relative', width: 'auto'}}>
+    <section className={styles.Section} id="Projeto">
+      <div
+        className="Container"
+        style={{ position: "relative", width: "auto" }}
+      >
         <div className={styles.Header}>
           <h1 className={styles.Title}>Projeto Água</h1>
           <h1 className={styles.Subtitle}>Fonte de vida</h1>
@@ -29,10 +37,26 @@ export default function MainProject() {
         </p>
 
         <div className={styles.Buttons}>
-          <button className={styles.Button}>Saiba mais</button>
-          <button className={styles.ButtonWatchVideo}>
+          <button
+            onClick={() =>
+              navigateTo(
+                "https://cnbbsul1.org.br/pastoral-da-ecologia-integral-avanca-na-formacao-do-curso-agua-fonte-de-vida/"
+              )
+            }
+            className={styles.Button}
+          >
+            Saiba +
+          </button>
+          <button
+            className={styles.ButtonWatchVideo}
+            onClick={() =>
+              navigateTo(
+                "https://www.youtube.com/playlist?list=PL4Ebb9dlYpzeUahCI9dlxnpDEI_e-4Rss"
+              )
+            }
+          >
             <BsPlayCircle />
-            Assistir Video
+            Video aulas completas
           </button>
         </div>
       </div>
