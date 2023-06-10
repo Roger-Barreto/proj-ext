@@ -1,0 +1,12 @@
+.Footer {
+  background-color: #007dcd;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 2rem 0;
+}
+
+.Footer > div {
+  display: flex;
+  justify-content: space-between;
+}

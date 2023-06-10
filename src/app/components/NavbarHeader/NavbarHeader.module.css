@@ -1,0 +1,29 @@
+.Header {
+  background-color: #fff;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.Header nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.HeaderLink{
+  color: #959595;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.ActiveLink{
+  color: #008D3B;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+  font-weight: bold;
+}

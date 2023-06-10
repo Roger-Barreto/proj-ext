@@ -1,0 +1,118 @@
+.Section {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -60px;
+}
+
+.Section > div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.Title {
+  font-size: 50px;
+  color: #008d3b;
+}
+
+.Text {
+  width: 50%;
+} 
+
+.Subtitle {
+  line-height: 1.5;
+}
+
+.Image {
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.Buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.Button {
+  background-color: #008d3b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.Button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.ButtonWatchVideo {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+}
+.ButtonWatchVideo:hover {
+  color: #008d3b;
+  cursor: pointer;
+}
+
+.Svg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -68%;
+}
+
+@media (max-width: 700px) {
+  .Section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .Buttons{
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .Buttons > .Button, .Buttons > .ButtonWatchVideo{
+    width: 100%;
+  }
+
+  .Title{
+    font-size: 40px;
+  }
+
+  .Image {
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+    height: 200px;
+  }
+
+  .Text{
+    width: 100%;
+  }
+}
